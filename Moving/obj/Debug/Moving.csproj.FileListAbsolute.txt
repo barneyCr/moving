@@ -1,0 +1,9 @@
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\bin\Debug\Moving.exe.config
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.csprojResolveAssemblyReference.cache
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.Form1.resources
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.Properties.Resources.resources
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.csproj.GenerateResource.Cache
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\bin\Debug\Moving.exe
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\bin\Debug\Moving.pdb
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.exe
+c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.pdb
