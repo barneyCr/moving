@@ -8,7 +8,7 @@ namespace Moving
 {
     public class Ship
     {
-        public Ship Create(int velocity, int x = 0, int y = 0)
+        public static Ship Create(int velocity, int x = 0, int y = 0)
         {
             return new Ship(x, y) { Velocity = velocity };
         }
@@ -17,7 +17,7 @@ namespace Moving
         {
             this.PosX = posX;
             this.PosY = posY;
-            this.Velocity = 50;
+            this.moveDestination = new Vector();
 
             lastMove = DateTime.Now;
             moveDuration = 0;
@@ -25,6 +25,7 @@ namespace Moving
 
         protected int PosX { get; set; }
         protected int PosY { get; set; }
+        public int ShipID { get; set; }
 
         /// <summary>
         /// Pixels/second
@@ -61,11 +62,19 @@ namespace Moving
             moveDestination = new Vector(x, y);
 
             double dist = Math.Sqrt((direction.X*direction.X + direction.Y*direction.Y));
-            moveDuration = 
+            this.moveDuration = 
                 dist / this.Velocity * 1000; // speed is in px/s, not px/ms
                 /* t = d/v */
 
             lastMove = DateTime.Now;
+        }
+
+        public double MovedRatio
+        {
+            get
+            {
+                return (DateTime.Now - lastMove).TotalMilliseconds / moveDuration;
+            }
         }
 
         public bool IsMoving
@@ -114,12 +123,25 @@ namespace Moving
             } 
         }
 
-       
+        public void StopThere()
+        {
+            var pos = this.Position;
+            this.UpdatePosition((int)pos.X, (int)pos.Y);
+            // this ensures the ship stops moving
+        }
+
         public void UpdatePosition(int x, int y)
         {
             PosX = x;
             PosY = y;
             Moving = false;
+        }
+
+        public void ChangeSpeed(int newV)
+        {
+            this.StopThere();
+            this.Velocity = newV;
+            this.Move((int)this.moveDestination.X, (int)this.moveDestination.Y);
         }
     }
     

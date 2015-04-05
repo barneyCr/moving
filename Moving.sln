@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moving", "Moving\Moving.csproj", "{448DD1DC-6F59-45E9-B65B-297F13B4E4B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auxiliary files", "Auxiliary files", "{567C42B2-F0C4-4EF2-8C96-19C45D180BF3}"
+	ProjectSection(SolutionItems) = preProject
+		MainWindow - CUTEPOISON.cs = MainWindow - CUTEPOISON.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -7,3 +7,12 @@ c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\bin\D
 c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\bin\Debug\Moving.pdb
 c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.exe
 c:\users\cristiantodea\documents\visual studio 2013\Projects\Moving\Moving\obj\Debug\Moving.pdb
+C:\Users\cristiantodea\Documents\Moving\Moving\bin\Debug\Moving.exe.config
+C:\Users\cristiantodea\Documents\Moving\Moving\obj\Debug\Moving.exe
+C:\Users\cristiantodea\Documents\Moving\Moving\obj\Debug\Moving.pdb
+C:\Users\cristiantodea\Documents\Moving\Moving\bin\Debug\Moving.exe
+C:\Users\cristiantodea\Documents\Moving\Moving\bin\Debug\Moving.pdb
+C:\Users\cristiantodea\Documents\Moving\Moving\obj\Debug\Moving.csprojResolveAssemblyReference.cache
+C:\Users\cristiantodea\Documents\Moving\Moving\obj\Debug\Moving.Form1.resources
+C:\Users\cristiantodea\Documents\Moving\Moving\obj\Debug\Moving.Properties.Resources.resources
+C:\Users\cristiantodea\Documents\Moving\Moving\obj\Debug\Moving.csproj.GenerateResource.Cache
