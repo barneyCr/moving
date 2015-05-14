@@ -52,11 +52,19 @@ namespace Moving
             return Math.Sqrt(((otherdude.X - PosX) * (otherdude.X - PosX)) + ((otherdude.Y - PosY) * (otherdude.Y - PosY)));
         }
 
+        private Vector startMove;
+        public double MoveDistance
+        {
+            get;
+            private set;
+        }
+
         public void Move(int x, int y)
         {
             Vector currPosition = Position;
             this.PosX = (int)currPosition.X;
             this.PosY = (int)currPosition.Y;
+            startMove = currPosition;
             Moving = true;
             direction = new Vector(x - PosX, y - PosY);
             moveDestination = new Vector(x, y);
@@ -66,6 +74,8 @@ namespace Moving
                 dist / this.Velocity * 1000; // speed is in px/s, not px/ms
                 /* t = d/v */
 
+            this.MoveDistance = dist;
+
             lastMove = DateTime.Now;
         }
 
@@ -73,7 +83,9 @@ namespace Moving
         {
             get
             {
-                return (DateTime.Now - lastMove).TotalMilliseconds / moveDuration;
+                if (startMove != null)
+                    return this.Position.DistanceTo(startMove) / this.MoveDistance;
+                return 0;
             }
         }
 
